@@ -17,7 +17,15 @@
 }
 *{box-sizing:border-box}
 html,body{height:100%}
-body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Noto Sans,sans-serif;line-height:1.6;background:var(--bg);color:var(--fg)}
+body{
+  margin:0;
+  font-family: Arial, "Helvetica Neue", Helvetica,
+               "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", "Nanum Gothic",
+               sans-serif;
+  line-height:1.6;
+  background:var(--bg);
+  color:var(--fg);
+}
 .site-header,.site-footer{display:flex;align-items:center;justify-content:space-between;max-width:1000px;margin:0 auto;padding:16px}
 .container{max-width:1000px;margin:0 auto;padding:24px 16px}
 .brand{font-weight:700;text-decoration:none;color:inherit}
