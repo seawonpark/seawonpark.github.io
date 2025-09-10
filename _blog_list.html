@@ -1,11 +1,16 @@
+---
+layout: default
+title: Blog
+nav: blog
+---
 <section>
   <h1>Blog</h1>
   <ul class="posts">
-    {% for post in site.posts %}
+    {% raw %}{% for post in site.posts %}{% endraw %}
     <li class="post-item">
-      <a class="post-link" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-      <span class="post-date">{{ post.date | date: "%Y-%m-%d" }}</span>
+      <a class="post-link" href="{{ site.baseurl }}{{ post.url }}">{{ '{{ post.title }}' }}</a>
+      <span class="post-date">{{ '{{ post.date | date: "%Y-%m-%d" }}' }}</span>
     </li>
-    {% endfor %}
+    {% raw %}{% endfor %}{% endraw %}
   </ul>
 </section>
