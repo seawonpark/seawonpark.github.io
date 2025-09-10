@@ -1,0 +1,8 @@
+---
+---
+{% assign page_title = page.title | escape %}
+<article class="prose">
+  <h1>{{ page_title }}</h1>
+  <p class="muted">{{ page.date | date: "%Y-%m-%d" }}</p>
+  {{ content }}
+</article>

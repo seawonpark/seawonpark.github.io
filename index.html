@@ -1,0 +1,23 @@
+---
+layout: default
+title: 홈
+nav: home
+---
+<section class="hero">
+  <h1>안녕하세요 👋</h1>
+  <p>이곳은 GitHub Pages로 만든 <strong>포트폴리오 + 블로그</strong> 템플릿입니다.</p>
+  <p><a class="btn" href="{{ site.baseurl }}/works.html">작업 보러가기</a></p>
+</section>
+
+<section>
+  <h2>최근 글</h2>
+  <ul class="posts">
+    {% for post in site.posts limit:3 %}
+    <li class="post-item">
+      <a class="post-link" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+      <span class="post-date">{{ post.date | date: "%Y-%m-%d" }}</span>
+    </li>
+    {% endfor %}
+  </ul>
+  <p><a class="btn" href="{{ site.baseurl }}/blog/">더 보기</a></p>
+</section>

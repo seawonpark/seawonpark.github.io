@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+  <link rel="icon" href="{{ site.baseurl }}/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="{{ site.baseurl }}/">My Portfolio</a>
+    <nav class="nav">
+      <a href="{{ site.baseurl }}/works.html"{% if page.nav == "works" %} class="active"{% endif %}>Works</a>
+      <a href="{{ site.baseurl }}/about.html"{% if page.nav == "about" %} class="active"{% endif %}>About</a>
+      <a href="{{ site.baseurl }}/contact.html"{% if page.nav == "contact" %} class="active"{% endif %}>Contact</a>
+      <a href="{{ site.baseurl }}/blog/"{% if page.nav == "blog" %} class="active"{% endif %}>Blog</a>
+      <button id="themeToggle" aria-label="테마 전환">🌓</button>
+    </nav>
+  </header>
+  <main class="container">
+    {{ content }}
+  </main>
+  <footer class="site-footer">
+    <small>© <span id="year"></span> {{ site.title }}</small>
+  </footer>
+  <script src="{{ site.baseurl }}/assets/script.js"></script>
+</body>
+</html>

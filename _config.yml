@@ -1,0 +1,8 @@
+title: "내 사이트"
+description: "정적 포트폴리오 + 블로그"
+# User 사이트(username.github.io)면 baseurl을 빈 문자열로 둡니다.
+# Project 사이트(username.github.io/repo)면 baseurl: "/레포이름" 으로 바꾸세요.
+baseurl: ""
+url: ""  # 커스텀 도메인 연결 시 "https://example.com"
+markdown: kramdown
+timezone: Europe/Berlin
